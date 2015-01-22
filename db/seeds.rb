@@ -11,7 +11,9 @@ User.create!(name:  'Deepak Mahakale',
              email: 'deepak.m@weboniselab.com',
              password:              'foobar',
              password_confirmation: 'foobar',
-             admin: true)
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
 
 50.times do |n|
   name  = Faker::Name.name
@@ -20,5 +22,7 @@ User.create!(name:  'Deepak Mahakale',
   User.create!(name:  name,
                email: email,
                password:              password,
-               password_confirmation: password)
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.zone.now)
 end
