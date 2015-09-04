@@ -8,16 +8,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create!(name:  'Deepak Mahakale',
-             email: 'deepak.m@weboniselab.com',
-             password:              'foobar',
-             password_confirmation: 'foobar',
+             email: 'deepak@weboapps.com',
+             password:              'deepak6186',
+             password_confirmation: 'deepak6186',
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
 
 50.times do |n|
   name  = Faker::Name.name
-  email = "example-#{n + 1}@weboniselab.com"
+  email = "example-#{n + 1}@weboapps.com"
   password = 'password'
   User.create!(name:  name,
                email: email,
