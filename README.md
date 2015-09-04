@@ -9,3 +9,4 @@ This application let user do following functionalities -
 * Follow / unfollow other users.
 * View the posts followed other users.
 
+
